@@ -1,0 +1,14 @@
+.profile {
+  display: flex;
+  align-items: flex-start; /* biar teks mulai dari atas */
+  gap: 20px;
+  margin-bottom: 40px;
+}
+
+.profile video {
+  max-width: 250px;   /* batas maksimal */
+  width: 100%;        /* menyesuaikan container */
+  height: auto;
+  border-radius: 12px;
+  object-fit: cover;
+}
