@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AmandailyOFC</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #fdfdfd;
+      color: #222;
+    }
+
+    header {
+      background: rgb(123, 113, 80);
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap; /* biar turun di layar sempit */
+    }
+
+    header a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+    }
+
+    h1 {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    /* Grid Album */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* fleksibel */
+      gap: 15px;
+      padding: 20px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+      cursor: pointer;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    /* Lightbox (popup) */
+    .lightbox {
+      display: none;
+      position: fixed;
+      z-index: 999;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+      background-color: rgba(0, 0, 0, 0.9);
+      align-items: center;
+      justify-content: center;
+    }
+
+    .lightbox img {
+      max-width: 90%;
+      max-height: 80vh;
+      border-radius: 10px;
+    }
+
+    .lightbox:target {
+      display: flex;
+    }
+
+    /* Close button */
+    .close {
+      position: absolute;
+      top: 20px;
+      right: 40px;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .close:hover {
+      color: #f00;
+    }
+
+    /* Tombol Next & Prev */
+    .nav-btn {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 40px;
+      color: white;
+      text-decoration: none;
+      padding: 10px;
+      user-select: none;
+    }
+    .prev {
+      left: 20px;
+    }
+    .next {
+      right: 20px;
+    }
+    .nav-btn:hover {
+      color: #f00;
+    }
+
+    /* Dropdown */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropbtn {
+      background: none;
+      border: none;
+      font-size: 14px;
+      cursor: pointer;
+      color: white;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #fff;
+      min-width: 160px;
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.1);
+      border-radius: 6px;
+      z-index: 1000;
+    }
+
+    .dropdown-content a {
+      color: #333;
+      padding: 10px 14px;
+      text-decoration: none;
+      display: block;
+      font-size: 14px;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f2f2f2;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo">
+    <a href="index.html">AmandailyOFC</a>
+  </div>
+  <div class="menu">
+   <!-- Dropdown Event -->
+      <div class="dropdown">
+        <button class="dropbtn">Event</button>
+        <div class="dropdown-content">
+          <a href="detail-Kartini Fest 2025.html">Kartini Fest 2025</a>
+          <a href="detail-All In Tour Surabaya.html">All In Tour Surabaya</a>
+          <a href="detail-Merdeka Fest 2025.html">Merdeka Fest 2025</a>
+        </div>
+      </div>
+
+      <!-- Dropdown Airport -->
+<div class="dropdown">
+  <button class="dropbtn">AirPort</button>
+  <div class="dropdown-content">
+    <a href="airport merdeka.html">Airport Merdeka</a>
+    <a href="airport kartini.html">Airport Kartini</a>
+  </div>
+</div>
+
+<!-- Menu Tentang Amanda -->
+<div class="dropdown">
+  <a href="tentang amanda.html" class="dropbtn">Tentang Amanda</a>
+</div>
+  </header>
+
+<h1>Airport Merdeka Fest 2025</h1>
+
+<!-- Gallery Section -->
+<section class="gallery">
+  <a href="#img1"><img src="Airport merdeka Fest/merdeka airport (1).jpg" alt="merdeka"></a>
+  <a href="#img2"><img src="Airport merdeka Fest/merdeka airport (2).jpg" alt="merdeka"></a>
+  <a href="#img3"><img src="Airport merdeka Fest/merdeka airport (3).jpg" alt="merdeka"></a>
+  <a href="#img4"><img src="Airport merdeka Fest/merdeka airport (4).jpg" alt="merdeka"></a>
+  <a href="#img5"><img src="Airport merdeka Fest/merdeka airport (5).jpg" alt="merdeka"></a>
+  <a href="#img6"><img src="Airport merdeka Fest/merdeka airport (6).jpg" alt="merdeka"></a>
+  <a href="#img7"><img src="Airport merdeka Fest/merdeka airport (7).jpg" alt="merdeka"></a>
+</section>
+
+<!-- Lightbox Sections -->
+<div id="img1" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <a href="#img7" class="nav-btn prev">&#10094;</a>
+  <img src="Airport merdeka Fest/merdeka airport (1).jpg" alt="">
+  <a href="#img2" class="nav-btn next">&#10095;</a>
+</div>
+
+<div id="img2" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <a href="#img1" class="nav-btn prev">&#10094;</a>
+  <img src="Airport merdeka Fest/merdeka airport (2).jpg" alt="">
+  <a href="#img3" class="nav-btn next">&#10095;</a>
+</div>
+
+<div id="img3" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <a href="#img2" class="nav-btn prev">&#10094;</a>
+  <img src="Airport merdeka Fest/merdeka airport (3).jpg" alt="">
+  <a href="#img4" class="nav-btn next">&#10095;</a>
+</div>
+
+<div id="img4" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <a href="#img3" class="nav-btn prev">&#10094;</a>
+  <img src="Airport merdeka Fest/merdeka airport (4).jpg" alt="">
+  <a href="#img5" class="nav-btn next">&#10095;</a>
+</div>
+
+<div id="img5" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <a href="#img4" class="nav-btn prev">&#10094;</a>
+  <img src="Airport merdeka Fest/merdeka airport (5).jpg" alt="">
+  <a href="#img6" class="nav-btn next">&#10095;</a>
+</div>
+
+<div id="img6" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <a href="#img5" class="nav-btn prev">&#10094;</a>
+  <img src="Airport merdeka Fest/merdeka airport (6).jpg" alt="">
+  <a href="#img7" class="nav-btn next">&#10095;</a>
+</div>
+
+<div id="img7" class="lightbox">
+  <a href="#" class="close">&times;</a>
+  <a href="#img6" class="nav-btn prev">&#10094;</a>
+  <img src="Airport merd

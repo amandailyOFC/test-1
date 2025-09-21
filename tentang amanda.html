@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tentang Amanda</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <a href="index.html">AmandailyOFC</a>
+    </div>
+    <nav>
+      <div class="dropdown">
+        <a href="#">Event</a>
+        <div class="dropdown-content">
+          <a href="detail-Kartini Fest 2025.html">Kartini Fest 2025</a>
+          <a href="detail-All In Tour Surabaya.html">All In Tour Surabaya</a>
+          <a href="detail-Merdeka Fest 2025.html">Merdeka Fest 2025</a>
+        </div>
+      </div>
+
+      <div class="dropdown">
+        <a href="#">AirPort</a>
+        <div class="dropdown-content">
+          <a href="airport kartini.html">Airport Kartini</a>
+          <a href="airport merdeka.html">Airport Merdeka</a>
+        </div>
+      </div>
+
+      <a href="tentang amanda.html">Tentang Amanda</a>
+    </nav>
+  </header>
+
+  <div class="container">
+
+    <!-- Quote -->
+    <div class="quote fade-up">
+      <p>"Aku Akan Membuat Hatimu Berdebar Kencang Seperti Lagu Dengan 1000 Bpm"</p>
+    </div>
+
+    <!-- Profile -->
+    <div class="profile">
+      <video autoplay loop muted playsinline class="profile-video pop-out">
+        <source src="tiktok amanda.mp4" type="video/mp4">
+        Browser kamu tidak mendukung video.
+      </video>
+      <div class="profile-info fade-up">
+        <h1>Amanda Sukma (Amanda)</h1>
+        <p>Amanda Puspita Sukma Mulyadewi (lahir 17 Desember 2004, Malang)
+          adalah anggota Generasi ke-10 JKT48 yang dikenal dengan karakter tomboy serta 
+          kecintaannya pada otomotif dan musik metal. Ia pertama bergabung di Academy’s Class B 
+          pada 27 Agustus 2020, kemudian mengalami pembatalan keanggotaan pada Desember 2020, 
+          setelah itu Amanda resmi menjadi trainee kembali mulai 18 Desember 2021. Setelah kurang 
+          lebih satu tahun empat bulan masa trainee,
+          Amanda dipromosikan menjadi member reguler pada 8 Mei 2023. </p>
+      </div>
+    </div>
+
+    <!-- Biodata -->
+    <h2 id="tentang">Biodata</h2>
+    <div class="card">
+      <p><strong>Nama:</strong> Amanda Sukma</p>
+      <p><strong>Nama Panggilan:</strong> Amanda</p>
+      <p><strong>Tanggal Lahir:</strong> 2004</p>
+      <p><strong>Generasi:</strong> 10th Generation JKT48</p>
+      <p><strong>Golongan Darah:</strong> O</p>
+    </div>
+
+    <!-- Single -->
+    <h2>Berpartisipasi Di Single</h2>
+    <div class="single-list">
+      <div class="single-item" data-audio="masa-depan.mp3" data-video="vidio lagu/masa-depan.mp4">Mirai ga Me ni Shimiru</div>
+      <div class="single-item" data-audio="kesempatan.mp3" data-video="vidio lagu/saatnya kesempatan.mp4">Chance no Junban</div>
+      <div class="single-item" data-audio="laptime.mp3" data-video="vidio lagu/laptime.mp4">Seishun no Lap Time (2024 ver.)</div>
+      <div class="single-item" data-audio="cosmos.mp3" data-video="vidio lagu/bunga cosmos.mp4">Cosmos no Kioku</div>
+    </div>
+
+    <!-- Album -->
+    <h2>Berpartisipasi Di Album</h2>
+    <div class="album-list">
+      <div class="album-item">Bokura no Eureka</div>
+      <div class="album-item">Sakura no Ki ni Narou</div>
+      <div class="album-item">Oboete Kudasai</div>
+      <div class="album-item">Green Flash</div>
+      <div class="album-item">Yume wo Shinaseru Wake ni Ikanai</div>
+    </div>
+
+    <!-- Unit Song -->
+    <h2>Unit Song Yang Pernah Dibawakan</h2>
+    <div class="grid">
+      <div class="card achievement" data-audio="rose.mp3" data-video="vidio lagu/rose.mp4">Manatsu No Christmas Rose</div>
+      <div class="card achievement" data-audio="kaleido.mp3">Mangekyou </div>
+      <div class="card achievement" data-audio="rkj.mp3" data-video="vidio lagu/rkj.mp4">Renai Kinshi Jourei</div>
+      <div class="card achievement" data-audio="onna.mp3">Onna No Ko No Dairokkan</div>
+      <div class="card achievement" data-audio="pajama.mp3" data-video="vidio lagu/amanda pajama drive.mp4">Pajama Drive</div>
+      <div class="card achievement" data-audio="kagami.mp3" data-video="vidio lagu/kagami.mp4">Joan of Arc di Dalam Cermin</div>
+      <div class="card achievement" data-audio="junjuo.mp3" data-video="vidio lagu/junjou.mp4">Junjou Shugi</div>
+      <div class="card achievement" data-audio="nice.mp3">Nice To Meet You</div>
+      <div class="card achievement" data-audio="tsundere.mp3" data-video="vidio lagu/tsundere.mp4">Tsundere</div>
+      <div class="card achievement" data-audio="glory.mp3" data-video="vidio lagu/glory.mp4">Glory Days</div>
+    </div>
+      
+    <!-- Original Amanda -->
+    <h2>Lagu Amanda</h2>
+    <div class="grid">
+      <div class="card achievement" data-audio="lagu-manda/pertama.mp3">APOLOGY</div>
+      <div class="card achievement" data-audio="lagu-manda/kedua.mp3">Numb.</div>
+      <div class="card achievement" data-audio="lagu-manda/ketiga.mp3">Your Star</div>
+      <div class="card achievement" data-audio="lagu-manda/keempat.mp3">Come Live</div>
+    </div>
+
+
+    <!-- Audio player hidden -->
+    <audio id="hoverAudio"></audio>
+
+    <!-- Popup Video -->
+    <div id="videoPopup" class="popup">
+      <div class="popup-content">
+        <span class="close">&times;</span>
+        <video id="popupVideo" controls></video>
+      </div>
+    </div>
+
+    <!-- Hashtag -->
+    <h2>Hashtag</h2>
+    <div class="grid">
+      <div class="card achievement">#Mandutify<br><small># Rekomendasi lagu</small></div>
+      <div class="card achievement">#SelasAmanda<br><small># pap hari selasa</small></div>
+      <div class="card achievement">#NadaManda<br><small># Lagu Original Amanda</small></div>
+    </div>
+
+    <!-- Sosial Media -->
+    <h2>Sosial Media</h2>
+    <div class="grid">
+      <div class="card achievement">
+        <a href="https://x.com/PS_AmandaJKT48" target="_blank">
+          <img src="X.png" alt="X" class="icon">
+          <div>@PS_AmandaJKT48</div>
+        </a>
+      </div>
+      <div class="card achievement">
+        <a href="https://www.instagram.com/jkt48.amanda.s/" target="_blank">
+          <img src="instagram.png" alt="Instagram" class="icon">
+          <div>@jkt48.amanda.s</div>
+        </a>
+      </div>
+      <div class="card achievement">
+        <a href="https://www.tiktok.com/@jkt48.amanda.s" target="_blank">
+          <img src="tiktok.png" alt="TikTok" class="icon">
+          <div>@jkt48.amanda.s</div>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Link ke JS -->
+  <script src="profile.js"></script>
+</body>
+</html>
